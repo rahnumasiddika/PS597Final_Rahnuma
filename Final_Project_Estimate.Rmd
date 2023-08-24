@@ -28,7 +28,7 @@ self_censorship_summary <- matched_df %>%
   ) %>%
   mutate(treatment = recode(treatment, `0` = "Pre-treatment (Democratic Regime)", `1` = "Post-treatment (Authoritarian Regime)"))
 
-self_censorship_summary
+
 
 
 #saving in exl file
@@ -868,4 +868,3 @@ power_rate
 
 #0.0486
 ```
-
