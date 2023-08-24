@@ -5,10 +5,12 @@ pacman::p_load(tidyverse, rio)
 #Downloading all the data sets and relevant variables 
 
 #Selected items are available in all waves 
+
 #Pre-treatment dataframes for BD: Wave 3 (data collected in 1996 ) & 4 (data collected in 2002)
 #Post-treatment dataframe for BD: Wave 7 (data collected in 2018)
+
 #Party in power at the time of data collection: BAL 
-#treatment= authoritarian regime (proxy for state repression)
+#treatment= authoritarian regime (proxy for state repression)  
 
 df1 <- import("WV3_Data_Bangladesh_Stata_v20221107.dta", setclass = "tibble")|> 
   #a set of politically sensitive questions, a set of political nonsensitive questions and a set of nonsensitive questions
